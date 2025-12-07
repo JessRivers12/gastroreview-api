@@ -26,7 +26,7 @@ spring:
             - RewritePath=/api/restaurants/(?<segment>.*), /$\{segment}
 
         - id: reviews-service
-          uri: lb://REVIEWS-SERVICE
+          uri: https://gastroreview-reviews-3-23fr.onrender.com
           predicates:
             - Path=/api/reviews/**
           filters:
