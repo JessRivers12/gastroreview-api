@@ -53,6 +53,6 @@ eureka:
     fetch-registry: true
   instance:
     prefer-ip-address: false
-    hostname: ${EUREKA_INSTANCE_HOSTNAME:localhost}
+    hostname: ${EUREKA_INSTANCE_HOSTNAME:api-gateway}
     non-secure-port: ${SERVER_PORT:8080}
     instance-id: ${spring.application.name}:${EUREKA_INSTANCE_ID:${random.value}}
